@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras geométricas</title>
+</head>
+<body>
+    <h1>Dibujar figuras geométricas</h1>
+
+    <form>
+        <label for="figura">Figura:</label>
+        <select id="figura">
+            <option value="triangulo">Triángulo</option>
+            <option value="rectangulo">Rectángulo</option>
+        </select>
+        <br><br>
+
+        <label for="caracter">Carácter:</label>
+        <input id="caracter" type="text" maxlength="1">
+        <br><br>
+
+        <label for="altura">Altura:</label>
+        <input id="altura" type="number" min="1">
+        <br><br>
+
+        <div id="campoBase">
+            <label for="base">Base:</label>
+            <input id="base" type="number" min="1">
+            <br><br>
+        </div>
+
+        <button id="mostrar">Mostrar</button>
+    </form>
+
+    <pre id="resultado"></pre>
+
+    <script src="js/figuras.js"></script>
+</body>
+</html>
